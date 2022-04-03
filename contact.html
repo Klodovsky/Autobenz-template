@@ -388,7 +388,7 @@
                                 <h4>Opening Hours</h4>
                                     
                                 <p>
-                                    OPEN MONDAY TO FRIDAY <br> 09H00 TO 12H00 | 13H00 TO 17H00
+                                    OPEN MONDAY TO FRIDAY <br> 09 AM TO 12 PM | 1 PM TO 5 PM
                                 </p>
                             </div>
                         </div>
@@ -685,11 +685,11 @@
 <!-- Custom javascript -->
 <script  src="js/ie10-viewport-bug-workaround.js"></script>
 
-<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4omYJlOaP814WDcCG8eubXcbhB-44Uac"></script>
+<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtMppSKGQ-L-nnZFMFJNwwzB4iDjXLcZs"></script>
 <script>
     function LoadMap(propertes) {
-        var defaultLat = 40.7110411;
-        var defaultLng = -74.0110326;
+        var defaultLat = 46.198988717502296;
+        var defaultLng = 6.152381077490227;
         var mapOptions = {
             center: new google.maps.LatLng(defaultLat, defaultLng),
             zoom: 15,
@@ -722,7 +722,7 @@
         };
         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
         var infoWindow = new google.maps.InfoWindow();
-        var myLatlng = new google.maps.LatLng(40.7110411, -74.0110326);
+        var myLatlng = new google.maps.LatLng(46.198988717502296, 6.152381077490227);
 
         var marker = new google.maps.Marker({
             position: myLatlng,
@@ -733,11 +733,11 @@
                 infoWindow.setContent("" +
                     "<div class='map-properties contact-map-content'>" +
                     "<div class='map-content'>" +
-                    "<p class='address'>20-21 Kathal St. Tampa City, FL</p>" +
+                    "<p class='address'><i class='flaticon-pin'></i>20 Rue Charles-Strum, 1206 GENÈVE</p>" +
                     "<ul class='map-properties-list'> " +
-                    "<li><i class='flaticon-phone'></i>  ++41 58 2551 177</li> " +
-                    "<li><i class='flaticon-phone'></i>  info@autobenz.ch</li> " +
-                    "<li><a href='index.html'><i class='fa fa-globe'></i>  http://www.example.com</li></a> " +
+                    "<li><i class='flaticon-phone'></i>  +41 58 2551 177</li> " +
+                    "<li><i class='flaticon-mail'></i>  info@autobenz.ch</li> " +
+                    "<li><a href='index.html'><i class='fa fa-globe'></i>  www.autobenz.ch</li></a> " +
                     "</ul>" +
                     "</div>" +
                     "</div>");
