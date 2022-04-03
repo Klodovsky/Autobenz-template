@@ -352,7 +352,7 @@
 }
 
 #page_scroller {
-    background:#020d26;
+    background:#f75d34;
 }
 
 .dashboard-nav{
@@ -469,7 +469,7 @@ input[type=checkbox]:checked + label:before {
 
 .search-button:hover {
     color: #fff;
-    background: #dc141d;
+    background: #f75d34;
 }
 
 .popular .price-for-user {
@@ -585,7 +585,7 @@ footer .footer-item .contact-info li label a:hover {
 }
 
 .footer .form-inline .btn{
-    background:#020d26;
+    background:#f75d34;
     color: #fff;
 }
 
