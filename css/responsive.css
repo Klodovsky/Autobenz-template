@@ -17,7 +17,7 @@
     }
 }
 
-@media  (min-width: 350px) and (max-width: 378px) {
+@media (min-width: 350px) and (max-width: 378px) {
     .tag-2 {
         float: left;
         position: absolute;
@@ -76,16 +76,33 @@
 
 
 @media (max-width: 700px) {
-    .sorting-options-right { float: left; }
-}
-@media (min-width: 1024px) {
-.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-    width: 220px;
-}
+    .sorting-options-right {
+        float: left;
+    }
 }
 
-.sort-tag{
+@media (min-width: 1024px) {
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        width: 220px;
+    }
+}
+
+.sort-tag {
     width: 220px !important;
     margin-bottom: 6px;
     margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+    .sub-banner-res {
+        height: 0px !important;
+        margin-bottom: 315px !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sub-banner-res {
+        height: 0px;
+        margin-bottom: 122px !important;
+    }
 }
