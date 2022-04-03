@@ -9748,7 +9748,8 @@ faq-info p{
 
 @media (max-width: 768px) {
     .sub-banner {
-        height: 300px;
+        /* height: 300px; */
+        margin-top: -259px;
     }
 
     .banner .carousel-caption{
