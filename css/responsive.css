@@ -96,13 +96,13 @@
 @media (max-width: 1024px) {
     .sub-banner-res {
         height: 0px !important;
-        margin-bottom: 315px !important;
+        margin-bottom: 288px !important;
     }
 }
 
 @media (min-width: 1024px) {
     .sub-banner-res {
-        height: 0px;
-        margin-bottom: 122px !important;
+        height: 0px !important;
+        margin-bottom: 100px !important;
     }
 }
