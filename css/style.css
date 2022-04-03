@@ -10606,7 +10606,46 @@ h2, details{
          padding: 0 10%; 
         }
 
+/** Title border area start **/
+.title-border{
+    height: 5px;
+    width: 94px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
 
+.title-border-inner {
+    height: 5px;
+    width: 5px;
+    animation: pulse 3s ease infinite alternate, nudge 5s linear infinite alternate;
+    float: left;
+    margin: 0 2px;
+}
+
+.title-border.tb2{
+    margin: 0 auto 0 0;
+}
+
+@keyframes nudge {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(50px, 0);
+    }
+    80% {
+        transform: translate(20px, 0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        background-color: #fff;
+    }
+    50% {
+        background-color: #fff;
+    }
+}
 
 
 

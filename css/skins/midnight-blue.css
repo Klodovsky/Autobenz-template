@@ -922,3 +922,13 @@ li.active.filtr-button.filtr a{
         color: #fff;
     }*/
 }
+
+.title-border {
+    background: #f0151f;
+}
+.title-border {
+    height: 5px;
+    width: 94px;
+    border-radius: 10px;
+    margin: 0 auto;
+}

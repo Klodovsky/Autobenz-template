@@ -22,10 +22,13 @@
     <link rel="stylesheet" type="text/css"  href="css/lightbox.min.css">
     <link rel="stylesheet" type="text/css"  href="css/jnoty.css">
     <link rel="stylesheet" type="text/css"  href="css/slick.css">
+    <link rel="stylesheet" type="text/css"  href="css/preloader.css">
 
     <!-- Custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/sidebar.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/initial.css">
     <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/midnight-blue.css">
 
     <!-- Favicon icon -->
@@ -49,135 +52,80 @@
     <![endif]-->
 </head>
 <body>
-<div class="page_loader"></div>
+<!-- preloader-start -->
+<div class="preloader">
+    <div class="meter">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="subline"></div>
+        <div class="subline"></div>
+        <div class="subline"></div>
+        <div class="subline"></div>
+        <div class="subline"></div>
+        <div class="loader-circle-1">
+            <div class="loader-circle-2"></div>
+        </div>
+        <span class="loadtext">Loading</span>
+    </div>
+    </div>
+    <!-- preloader-end -->
 
 <!-- Main header start -->
-<header class="main-header sticky-header header-with-top">
+<header class="main-header sticky-header header-with-top" style="top: 0px !important;">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand company-logo" href="index.html">
-                <img src="img/logos/black-logo.png" alt="logo">
+                <img src="img/logos/ab.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" id="drawer">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="navbar-collapse collapse w-100 justify-content-end" id="navbar">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Home
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
-                            <li><a class="dropdown-item" href="index-2.html">Home 2</a></li>
-                            <li><a class="dropdown-item" href="index-3.html">Home 3</a></li>
-                            <li><a class="dropdown-item" href="index-4.html">Home 4</a></li>
-                            <li><a class="dropdown-item" href="index-5.html">Home 5</a></li>
-                            <li><a class="dropdown-item" href="index-6.html">Home 6</a></li>
-                        </ul>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="pricing-tables.html" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pricing
+                        </a>
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Car Listing
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">List Layout</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="car-list-rightside.html">List Right Sidebar</a></li>
-                                    <li><a class="dropdown-item" href="car-list-leftsidebar.html">List Left Sidebar</a></li>
-                                    <li><a class="dropdown-item" href="car-list-fullWidth.html">List FullWidth</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Grid Layout</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="car-grid-rightside.html">Grid Right Sidebar</a></li>
-                                    <li><a class="dropdown-item" href="car-grid-leftside.html">Grid Left Sidebar</a></li>
-                                    <li><a class="dropdown-item" href="car-grid-fullWidth.html">Grid FullWidth</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Car Details</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="car-details.html">Car Details 1</a></li>
-                                    <li><a class="dropdown-item" href="car-details-2.html">Car Details 2</a></li>
-                                    <li><a class="dropdown-item" href="car-details-3.html">Car Details 3</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown megamenu-li active">
-                        <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
-                            <div class="megamenu-area">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-4 col-lg-4">
-                                        <div class="megamenu-section">
-                                            <h6 class="megamenu-title">Pages</h6>
-                                            <a class="dropdown-item" href="about.html">About Us</a>
-                                            <a class="dropdown-item" href="services.html">Services</a>
-                                            <a class="dropdown-item" href="agent.html">Agent</a>
-                                            <a class="dropdown-item" href="car-comparison.html">Car Compare</a>
-                                            <a class="dropdown-item" href="car-reviews.html">Car Reviews</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-4">
-                                        <div class="megamenu-section">
-                                            <h6 class="megamenu-title">Pages</h6>
-                                            <a class="dropdown-item" href="gallery.html">Gallery</a>
-                                            <a class="dropdown-item" href="typography.html">Typography</a>
-                                            <a class="dropdown-item" href="pricing-tables.html">Pricing Tables</a>
-                                            <a class="dropdown-item" href="elements.html">Elements</a>
-                                            <a class="dropdown-item" href="faq.html">Faq</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-lg-4">
-                                        <div class="megamenu-section">
-                                            <h6 class="megamenu-title">Pages</h6>
-                                            <a class="dropdown-item" href="icon.html">Icons</a>
-                                            <a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
-                                            <a class="dropdown-item" href="404.html">Error Page</a>
-                                            <a class="dropdown-item" href="login.html">login</a>
-                                            <a class="dropdown-item" href="signup.html">Register</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Blog
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="blog-columns-2col.html">Blog Columns 2</a></li>
-                            <li><a class="dropdown-item" href="blog-columns-3col.html">Blog Columns 3</a></li>
-                            <li><a class="dropdown-item" href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Shop
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="shop-list.html">Shop List</a></li>
-                            <li><a class="dropdown-item" href="shop-cart.html">Shop Cart</a></li>
-                            <li><a class="dropdown-item" href="shop-checkout.html">Shop Checkout</a></li>
-                            <li><a class="dropdown-item" href="shop-details.html">Shop Details</a></li>
-                        </ul>
+                        <a class="nav-link dropdown-toggle" href="add-item.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add vehicle</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item dropdown">
+                </ul>
+                    <ul class="navbar-nav ml-auto">
+
+                    <!-- <li class="nav-item dropdown">
                         <a href="login.html" class="nav-link h-icon">
                             <i class="flaticon-logout"></i>
                         </a>
-                    </li>
+                    </li> -->
+                    
                     <li class="nav-item dropdown">
                         <a href="#full-page-search" class="nav-link h-icon">
                             <i class="fa fa-search"></i>
                         </a>
                     </li>
+                    <button class="dropdown-toggle" type="button" data-toggle="dropdown" style="background: transparent;border: none;vertical-align: middle;padding-left: 6px;">
+                        <img src="https://foxnfox.ch/includes/img/flags/chflag-400-200.png" class="img-responsive" alt="switzerland" data-country="ch" style="width: 35px;">
+                    </button>
+                    <select id="languages" style="color: #c1c5cc!important; font-size: 13px!important; background-color: #020d26;text-transform: uppercase; font-weight: 600;line-height: 50px;   padding: 4px 7px;   max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-top: 39px !important;margin-left: 8px;">
+                        <option value="FR" selected>FR</option>
+                        <option value="DE">DE</option>
+                        <option value="IT">IT</option>
+                      
+                      </select>
                 </ul>
             </div>
         </nav>
@@ -358,15 +306,15 @@
 <!-- Sidenav end -->
 
 <!-- Sub banner start -->
-<div class="sub-banner">
+<div class="sub-banner" style="height: 0px !important;margin-bottom: 122px !important;">
     <div class="container breadcrumb-area">
-        <div class="breadcrumb-areas">
+        <!-- <div class="breadcrumb-areas">
             <h1>Pricing Tables</h1>
             <ul class="breadcrumbs">
                 <li><a href="index.html">Home</a></li>
                 <li class="active">Pricing Tables</li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </div>
 <!-- Sub Banner end -->
@@ -376,10 +324,17 @@
     <div class="container">
         <!-- Main title -->
         <div class="main-title text-center">
-            <h1>Pricing Tables</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <h1 class="mb-10">Pricing Tables</h1>
+            <div class="title-border mb-30">
+                <div class="title-border-inner"></div>
+                <div class="title-border-inner"></div>
+                <div class="title-border-inner"></div>
+                <div class="title-border-inner"></div>
+                <div class="title-border-inner"></div>
+            </div>
         </div>
-        <div class="row">
+
+        <div class="row" style="justify-content: center !important;">
             <div class="col-xl-4 col-lg-4 col-md-12">
                 <div class="pricing-1 plan">
                     <div class="plan-header">
@@ -426,29 +381,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-12">
-                <div class="pricing-1 plan">
-                    <div class="plan-header">
-                        <h5>Professional Plan</h5>
-                        <p>Plan short description</p>
-                        <div class="plan-price"><sup>$</sup>80<span>/month</span> </div>
-                    </div>
-                    <div class="plan-list">
-                        <ul>
-                            <li><i class="fa fa-globe"></i>Unlimited Websites</li>
-                            <li><i class="fa fa-thumbs-up"></i>Unlimited Storage</li>
-                            <li><i class="fa fa-signal"></i>Unlimited Bandwidth</li>
-                            <li><i class="fa fa-user"></i>1000 Email Addresses</li>
-                            <li><i class="fa fa-star"></i>Free domain with annual plan</li>
-                            <li><i class="fa fa-rocket"></i>4X Processing Power</li>
-                            <li><i class="fa fa-server"></i>Premium DNS</li>
-                        </ul>
-                        <div class="plan-button text-center">
-                            <a href="#" class="btn pricing-btn">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -465,27 +397,22 @@
                     </h4>
                     <ul class="contact-info">
                         <li>
-                            <i class="flaticon-pin"></i>20/F Green Road, Dhanmondi, Dhaka
+                            <i class="flaticon-pin"></i>20 Rue Charles-Strum<br>
+                            1206 GENÈVE.
                         </li>
                         <li>
-                            <i class="flaticon-mail"></i><a href="mailto:sales@hotelempire.com">info@autobenz.ch</a>
-                        </li>
-                        <li>
-                            <i class="flaticon-phone"></i><a href="tel:+55-417-634-7071">+0477 85X6 552</a>
-                        </li>
-                        <li>
-                            <i class="flaticon-fax"></i>+0477 85X6 552
+                            <i class="flaticon-mail"></i><a href="mailto:sales@hotelempire.com">info@autobenz.com</a>
                         </li>
                     </ul>
                     <div class="clearfix"></div>
-                    <div class="social-list-2">
+                    <!-- <div class="social-list-2">
                         <ul>
                             <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
@@ -498,69 +425,30 @@
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="about.html">About Us</a>
+                            <a href="pricing-tables.html">Pricing</a>
                         </li>
                         <li>
-                            <a href="services.html">Services</a>
-                        </li>
-                        <li>
-                            <a href="faq.html">Faq</a>
+                            <a href="add-item.html">Add vehicle</a>
                         </li>
                         <li>
                             <a href="contact.html">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="car-comparison.html">Car Compare</a>
-                        </li>
-                        <li>
-                            <a href="car-reviews.html">Car Reviews</a>
-                        </li>
-                        <li>
-                            <a href="elements.html">Elements</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                 <div class="recent-posts footer-item">
-                    <h4>Recent Posts</h4>
-                    <div class="d-flex mb-4 recent-posts-box">
-                        <a href="car-details.html">
-                            <img class="flex-shrink-0 me-3" src="img/car/small-car-3.png" alt="small-car">
-                        </a>
-                        <div class="detail align-self-center">
-                            <h5>
-                                <a href="car-details.html">Bentley Continental GT</a>
-                            </h5>
-                            <div class="listing-post-meta">
-                                $345,00 | <a href="#"><i class="fa fa-calendar"></i> Jan 12, 2021</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-4 recent-posts-box">
-                        <a href="car-details.html">
-                            <img class="flex-shrink-0 me-3" src="img/car/small-car-1.png" alt="small-car">
-                        </a>
-                        <div class="detail align-self-center">
-                            <h5>
-                                <a href="car-details.html">Fiat Punto Red</a>
-                            </h5>
-                            <div class="listing-post-meta">
-                                $345,00 | <a href="#"><i class="fa fa-calendar"></i> Aug 24, 2021</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex recent-posts-box">
-                        <a href="car-details.html">
-                            <img class="flex-shrink-0 me-3" src="img/car/small-car-2.png" alt="small-car">
-                        </a>
-                        <div class="detail align-self-center">
-                            <h5>
-                                <a href="car-details.html">Nissan Micra Gen5</a>
-                            </h5>
-                            <div class="listing-post-meta">
-                                $345,00 | <a href="#"><i class="fa fa-calendar"></i> Sep 24, 2021</a>
-                            </div>
+                    <h4>Download the app</h4>
+                    <div class="wrap">
+                    <div class="template-demo mt-2"> 
+                        <button class="btn btn-outline-dark btn-icon-text"> 
+                        <i class="fa fa-apple btn-icon-prepend"></i> 
+                        <span class="d-inline-block text-left" style="color: azure;"> <small class="font-weight-light d-block">Available on the</small> App Store 
+                        </span> </button> <button class="btn btn-outline-dark btn-icon-text"> <i class="fa fa-android btn-icon-prepend">
+                            
+                        </i> <span class="d-inline-block text-left" style="color: azure;"> <small class="font-weight-light d-block">Get it on the</small> Google Play 
+                        </span>
+                        </button> 
                         </div>
                     </div>
                 </div>
@@ -569,7 +457,7 @@
                 <div class="footer-item clearfix">
                     <h4>Subscribe</h4>
                     <div class="Subscribe-box">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                        <p>Subscribe now and get the latest on sales, new releases and more…</p>
                         <form class="form-inline d-flex" action="#">
                             <input class="form-control" type="email" id="email" placeholder="Email Address...">
                             <button class="btn button-theme" type="submit"><i class="fa fa-paper-plane"></i></button>
@@ -583,7 +471,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>© 2021 <a href="#">Theme Vessel.</a> Trademarks and brands are the property of their respective owners.</p>
+                    <p>© 2020 <a href="#">AUTOBENZ.</a> Trademarks and brands are the property of their respective owners.</p>
                 </div>
             </div>
         </div>
