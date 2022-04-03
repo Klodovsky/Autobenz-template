@@ -2676,7 +2676,7 @@ input[type=checkbox]:checked + label:before {
     z-index: 999;
 }
 .del-price{
-    color: #d92222;
+    color: #f83301d9;
     font-size: 16px;
     font-weight: 600;
     position: relative;
@@ -10604,8 +10604,6 @@ h2, details{
     #demo {
          padding: 0 10%; 
         }
-
-
 
 
 
