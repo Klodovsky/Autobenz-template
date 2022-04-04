@@ -11144,3 +11144,46 @@ body {
         height: auto;
     }
 }
+
+.centered {
+    margin: auto;
+    width: 80%;
+    border: 2px solid #020d260f;
+    padding: 10px;
+}
+
+
+.tag-3 {
+    float: left;
+    position: absolute;
+    transform: rotate(0deg);
+    top: 193px;
+    text-align: center;
+    width: 336px;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    line-height: 32px;
+    background: #292929a6;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+.tag-favs {
+    float: left;
+    position: absolute;
+    transform: rotate(0deg);
+    top: 277px;
+    text-align: -webkit-right;
+    width: 463px;
+    font-size: 18px;
+    padding-right: 4px;
+    margin: 0;
+    color: #f00;
+    font-weight: 500;
+    line-height: 32px;
+    background: #292929a6;
+    text-transform: uppercase;
+    z-index: 999;
+}

@@ -348,7 +348,7 @@
             </div>
             <div class="faq-info-box mb-50">
                 <!-- <h3 class="heading-2">Profile Settings</h3> -->
-                <div class="faq-info">
+                <div class="faq-info centered">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home2"
@@ -384,19 +384,19 @@
                                 </div>
                                 <form class="row contact_form" action="contact_process.php" method="post"
                                     id="contactForm" novalidate="novalidate">
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-6">
                                         <input type="text" class="form-control" id="fname" name="name"
                                             placeholder="First Name" value="John">
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-6">
                                         <input type="text" class="form-control" id="lname" name="name"
                                             placeholder="Last Name" value="Doe">
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-6">
                                         <input type="text" class="form-control" id="number" name="number"
                                             placeholder="Phone" value="+41 123456789">
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-6">
                                         <input type="email" class="form-control" id="email" name="email"
                                             placeholder="Email" value="user@email.com">
                                     </div>
@@ -409,6 +409,10 @@
                                             placeholder="City" value="Geneve">
                                     </div>
                                     <div class="form-group col-md-4">
+                                        <input type="text" class="form-control" id="company" name="number"
+                                            placeholder="Company">
+                                    </div>
+                                    <div class="form-group col-md-4">
                                         <input type="text" class="form-control" id="address" name="number"
                                             placeholder="Address" value="9 rue Marrakech">
                                     </div>
@@ -416,11 +420,12 @@
                                         <input type="text" class="form-control" id="country" name="number"
                                             placeholder="Country" value="Switzerland">
                                     </div>
-                                    <div class="form-group col-md-4">
-                                        <input type="text" class="form-control" id="company" name="number"
-                                            placeholder="Company">
+
+                                    <div class="form-group col-md-6">
+                                        <input type="password" class="form-control" id="current-password"
+                                            name="password" placeholder="Current Password">
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-6">
                                         <input type="password" class="form-control" id="password" name="password"
                                             placeholder="Change Password">
                                     </div>
@@ -437,22 +442,26 @@
                                     <div class="col-lg-4 col-md-5">
                                         <div class="car-thumbnail">
                                             <a href="car-details.html" class="car-img">
-                                                <div class="tag">Featured</div>
-                                                <div class="price-box-2"><sup>$</sup>800<span>/month</span> </div>
+                                                <div class="tag-3">
+                                                    <div class="del-price"><del>CHF 100'000</del><span></span> </div>
+                                                </div>
                                                 <img class="d-block w-100" src="img/car/car-5.png" alt="car">
                                             </a>
                                             <div class="carbox-overlap-wrapper">
                                                 <div class="overlap-box">
                                                     <div class="overlap-btns-area">
-                                                        <a class="overlap-btn" data-bs-toggle="modal"
-                                                            data-bs-target="#carOverviewModal">
-                                                            <i class="fa fa-eye-slash"></i>
+                                                        <a class="overlap-btn compare-btn">
+                                                            <i class="fa fa-share"></i>
                                                         </a>
                                                         <a class="overlap-btn wishlist-btn">
                                                             <i class="fa fa-heart-o"></i>
                                                         </a>
-                                                        <a class="overlap-btn compare-btn">
-                                                            <i class="fa fa-balance-scale"></i>
+                                                        <a class="overlap-btn wishlist-btn">
+                                                            <i class="fa fa-print"></i>
+                                                        </a>
+                                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#">
+                                                            <i class="fa fa-eye"><span>16</span></i>
                                                         </a>
                                                         <div class="car-magnify-gallery">
                                                             <a href="img/car/car-5.png" class="overlap-btn"
@@ -488,33 +497,25 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-8 col-md-7 align-self-center">
+
                                         <div class="detail">
                                             <h3 class="title">
                                                 <a href="car-details.html">Hyundai Santa</a>
                                             </h3>
-                                            <h5 class="location">
+                                            <!-- <h5 class="location">
                                                 <a href="car-details.html">
-                                                    <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
+                                                    <i class="flaticon-cash"></i>123 Kathal St. Tampa City,
                                                 </a>
-                                            </h5>
+                                            </h5> -->
                                             <ul class="facilities-list clearfix">
                                                 <li>
-                                                    <i class="flaticon-way"></i> 4,000 km
+                                                    <i class="flaticon-way"></i> 94,000 <sup>km</sup>
                                                 </li>
                                                 <li>
                                                     <i class="flaticon-manual-transmission"></i> Manual
                                                 </li>
                                                 <li>
-                                                    <i class="flaticon-calendar-1"></i> 2021
-                                                </li>
-                                                <li>
                                                     <i class="flaticon-fuel"></i> Petrol
-                                                </li>
-                                                <li>
-                                                    <i class="flaticon-car"></i> Sport
-                                                </li>
-                                                <li>
-                                                    <i class="flaticon-gear"></i> Blue
                                                 </li>
                                             </ul>
                                         </div>
@@ -526,28 +527,32 @@
                                     <div class="col-lg-4 col-md-5">
                                         <div class="car-thumbnail">
                                             <a href="car-details.html" class="car-img">
-                                                <div class="tag">Featured</div>
-                                                <div class="price-box-2"><sup>$</sup>720<span>/month</span> </div>
-                                                <img class="d-block w-100" src="img/car/car-1.png" alt="car">
+                                                <div class="tag-3">
+                                                    <div class="del-price"><del>CHF 100'000</del><span></span> </div>
+                                                </div>
+                                                <img class="d-block w-100" src="img/car/car-5.png" alt="car">
                                             </a>
                                             <div class="carbox-overlap-wrapper">
                                                 <div class="overlap-box">
                                                     <div class="overlap-btns-area">
-                                                        <a class="overlap-btn" data-bs-toggle="modal"
-                                                            data-bs-target="#carOverviewModal">
-                                                            <i class="fa fa-eye-slash"></i>
+                                                        <a class="overlap-btn compare-btn">
+                                                            <i class="fa fa-share"></i>
                                                         </a>
                                                         <a class="overlap-btn wishlist-btn">
                                                             <i class="fa fa-heart-o"></i>
                                                         </a>
-                                                        <a class="overlap-btn compare-btn">
-                                                            <i class="fa fa-balance-scale"></i>
+                                                        <a class="overlap-btn wishlist-btn">
+                                                            <i class="fa fa-print"></i>
+                                                        </a>
+                                                        <a class="overlap-btn active" data-bs-toggle="modal"
+                                                            data-bs-target="#">
+                                                            <i class="fa fa-eye"><span>16</span></i>
                                                         </a>
                                                         <div class="car-magnify-gallery">
-                                                            <a href="img/car/car-1.png" class="overlap-btn"
-                                                                data-sub-html="<h4>Toyota Prius</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                                            <a href="img/car/car-5.png" class="overlap-btn"
+                                                                data-sub-html="<h4>Hyundai Santa</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                                 <i class="fa fa-expand"></i>
-                                                                <img class="hidden" src="img/car/car-1.png"
+                                                                <img class="hidden" src="img/car/car-5.png"
                                                                     alt="hidden-img">
                                                             </a>
                                                             <a href="img/car/car-2.png" class="hidden"
@@ -565,9 +570,9 @@
                                                                 <img class="hidden" src="img/car/car-4.png"
                                                                     alt="hidden-img">
                                                             </a>
-                                                            <a href="img/car/car-5.png" class="hidden"
-                                                                data-sub-html="<h4>Hyundai Santa</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
-                                                                <img class="hidden" src="img/car/car-5.png"
+                                                            <a href="img/car/car-1.png" class="hidden"
+                                                                data-sub-html="<h4>Toyota Prius</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                                                <img class="hidden" src="img/car/car-1.png"
                                                                     alt="hidden-img">
                                                             </a>
                                                         </div>
@@ -577,52 +582,29 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-8 col-md-7 align-self-center">
+
                                         <div class="detail">
                                             <h3 class="title">
-                                                <a href="car-details.html">Toyota Prius</a>
+                                                <a href="car-details.html">Hyundai Santa</a>
                                             </h3>
                                             <h5 class="location">
                                                 <a href="car-details.html">
-                                                    <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
+                                                    <i class="flaticon-cash"></i>123 Kathal St. Tampa City,
                                                 </a>
                                             </h5>
                                             <ul class="facilities-list clearfix">
                                                 <li>
-                                                    <i class="flaticon-way"></i> 4,000 km
+                                                    <i class="flaticon-way"></i> 94,000 <sup>km</sup>
                                                 </li>
                                                 <li>
                                                     <i class="flaticon-manual-transmission"></i> Manual
                                                 </li>
                                                 <li>
-                                                    <i class="flaticon-calendar-1"></i> 2021
-                                                </li>
-                                                <li>
                                                     <i class="flaticon-fuel"></i> Petrol
-                                                </li>
-                                                <li>
-                                                    <i class="flaticon-car"></i> Sport
-                                                </li>
-                                                <li>
-                                                    <i class="flaticon-gear"></i> Blue
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="pagination-box p-box-2 text-center">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#"><i class="fa fa-angle-left"></i></a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
-                                            </li>
-                                        </ul>
-                                    </nav>
                                 </div>
                             </div>
 
@@ -633,14 +615,13 @@
                                     <div class="car-box-3">
                                         <div class="car-thumbnail">
                                             <a href="car-details.html" class="car-img">
-                                                <div class="tag-2 bg-active">Featured</div>
-                                                <div class="price-box-2"><sup>$</sup>800<span>/month</span> </div>
+                                                <div class="tag-favs"><del>CHF 65'500</del></div>
                                                 <img class="d-block w-100" src="img/car/car-5.png" alt="car">
                                             </a>
                                             <div class="carbox-overlap-wrapper">
                                                 <div class="overlap-box">
                                                     <div class="overlap-btns-area">
-                                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                                        <a class="overlap-btn active" data-bs-toggle="modal"
                                                             data-bs-target="#carOverviewModal">
                                                             <i class="fa fa-eye-slash"></i>
                                                         </a>
@@ -686,30 +667,19 @@
                                             <h1 class="title">
                                                 <a href="car-details.html">Hyundai Santa</a>
                                             </h1>
-                                            <div class="location">
-                                                <a href="car-details.html">
-                                                    <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                                </a>
-                                            </div>
+
                                             <ul class="facilities-list clearfix">
                                                 <li>
-                                                    <i class="flaticon-way"></i> 4,000 km
+                                                    <i class="flaticon-way"></i> 4,000 <sup>km</sup>
                                                 </li>
                                                 <li>
                                                     <i class="flaticon-manual-transmission"></i> Manual
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-calendar-1"></i> 2021
-                                                </li>
+
                                                 <li>
                                                     <i class="flaticon-fuel"></i> Petrol
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-car"></i> Sport
-                                                </li>
-                                                <li>
-                                                    <i class="flaticon-gear"></i> Blue
-                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -718,14 +688,13 @@
                                     <div class="car-box-3">
                                         <div class="car-thumbnail">
                                             <a href="car-details.html" class="car-img">
-                                                <div class="tag-2">For Sale</div>
-                                                <div class="price-box-2"><sup>$</sup>780<span>/month</span> </div>
+                                                <div class="tag-favs"><del>CHF 65'500</del></div>
                                                 <img class="d-block w-100" src="img/car/car-1.png" alt="car">
                                             </a>
                                             <div class="carbox-overlap-wrapper">
                                                 <div class="overlap-box">
                                                     <div class="overlap-btns-area">
-                                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                                        <a class="overlap-btn active" data-bs-toggle="modal"
                                                             data-bs-target="#carOverviewModal">
                                                             <i class="fa fa-eye-slash"></i>
                                                         </a>
@@ -771,30 +740,19 @@
                                             <h1 class="title">
                                                 <a href="car-details.html">Toyota Prius</a>
                                             </h1>
-                                            <div class="location">
-                                                <a href="car-details.html">
-                                                    <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                                </a>
-                                            </div>
+
                                             <ul class="facilities-list clearfix">
                                                 <li>
-                                                    <i class="flaticon-way"></i> 4,000 km
+                                                    <i class="flaticon-way"></i> 4,000 <sup>km</sup>
                                                 </li>
                                                 <li>
                                                     <i class="flaticon-manual-transmission"></i> Manual
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-calendar-1"></i> 2021
-                                                </li>
+
                                                 <li>
                                                     <i class="flaticon-fuel"></i> Petrol
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-car"></i> Sport
-                                                </li>
-                                                <li>
-                                                    <i class="flaticon-gear"></i> Blue
-                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -803,14 +761,13 @@
                                     <div class="car-box-3">
                                         <div class="car-thumbnail">
                                             <a href="car-details.html" class="car-img">
-                                                <div class="tag-2 bg-active">Featured</div>
-                                                <div class="price-box-2"><sup>$</sup>650<span>/month</span> </div>
+                                                <div class="tag-favs"><del>CHF 65'500</del></div>
                                                 <img class="d-block w-100" src="img/car/car-4.png" alt="car">
                                             </a>
                                             <div class="carbox-overlap-wrapper">
                                                 <div class="overlap-box">
                                                     <div class="overlap-btns-area">
-                                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                                        <a class="overlap-btn active" data-bs-toggle="modal"
                                                             data-bs-target="#carOverviewModal">
                                                             <i class="fa fa-eye-slash"></i>
                                                         </a>
@@ -863,23 +820,16 @@
                                             </div>
                                             <ul class="facilities-list clearfix">
                                                 <li>
-                                                    <i class="flaticon-way"></i> 4,000 km
+                                                    <i class="flaticon-way"></i> 4,000 <sup>km</sup>
                                                 </li>
                                                 <li>
                                                     <i class="flaticon-manual-transmission"></i> Manual
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-calendar-1"></i> 2021
-                                                </li>
+
                                                 <li>
                                                     <i class="flaticon-fuel"></i> Petrol
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-car"></i> Sport
-                                                </li>
-                                                <li>
-                                                    <i class="flaticon-gear"></i> Blue
-                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -888,14 +838,13 @@
                                     <div class="car-box-3">
                                         <div class="car-thumbnail">
                                             <a href="car-details.html" class="car-img">
-                                                <div class="tag-2">For Sale</div>
-                                                <div class="price-box-2"><sup>$</sup>710<span>/month</span> </div>
+                                                <div class="tag-favs"><del>CHF 65'500</del></div>
                                                 <img class="d-block w-100" src="img/car/car-3.png" alt="car">
                                             </a>
                                             <div class="carbox-overlap-wrapper">
                                                 <div class="overlap-box">
                                                     <div class="overlap-btns-area">
-                                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                                        <a class="overlap-btn active" data-bs-toggle="modal"
                                                             data-bs-target="#carOverviewModal">
                                                             <i class="fa fa-eye-slash"></i>
                                                         </a>
@@ -948,23 +897,16 @@
                                             </div>
                                             <ul class="facilities-list clearfix">
                                                 <li>
-                                                    <i class="flaticon-way"></i> 4,000 km
+                                                    <i class="flaticon-way"></i> 4,000 <sup>km</sup>
                                                 </li>
                                                 <li>
                                                     <i class="flaticon-manual-transmission"></i> Manual
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-calendar-1"></i> 2021
-                                                </li>
+
                                                 <li>
                                                     <i class="flaticon-fuel"></i> Petrol
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-car"></i> Sport
-                                                </li>
-                                                <li>
-                                                    <i class="flaticon-gear"></i> Blue
-                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -973,14 +915,13 @@
                                     <div class="car-box-3">
                                         <div class="car-thumbnail">
                                             <a href="car-details.html" class="car-img">
-                                                <div class="tag-2 bg-active">Featured</div>
-                                                <div class="price-box-2"><sup>$</sup>920<span>/month</span> </div>
+                                                <div class="tag-favs"><del>CHF 65'500</del></div>
                                                 <img class="d-block w-100" src="img/car/car-6.png" alt="car">
                                             </a>
                                             <div class="carbox-overlap-wrapper">
                                                 <div class="overlap-box">
                                                     <div class="overlap-btns-area">
-                                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                                        <a class="overlap-btn active" data-bs-toggle="modal"
                                                             data-bs-target="#carOverviewModal">
                                                             <i class="fa fa-eye-slash"></i>
                                                         </a>
@@ -1026,30 +967,19 @@
                                             <h1 class="title">
                                                 <a href="car-details.html">Audi Q7 2018</a>
                                             </h1>
-                                            <div class="location">
-                                                <a href="car-details.html">
-                                                    <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
-                                                </a>
-                                            </div>
+
                                             <ul class="facilities-list clearfix">
                                                 <li>
-                                                    <i class="flaticon-way"></i> 4,000 km
+                                                    <i class="flaticon-way"></i> 4,000 <sup>km</sup>
                                                 </li>
                                                 <li>
                                                     <i class="flaticon-manual-transmission"></i> Manual
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-calendar-1"></i> 2021
-                                                </li>
+
                                                 <li>
                                                     <i class="flaticon-fuel"></i> Petrol
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-car"></i> Sport
-                                                </li>
-                                                <li>
-                                                    <i class="flaticon-gear"></i> Blue
-                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -1058,14 +988,13 @@
                                     <div class="car-box-3">
                                         <div class="car-thumbnail">
                                             <a href="car-details.html" class="car-img">
-                                                <div class="tag-2">For Rent</div>
-                                                <div class="price-box-2"><sup>$</sup>855<span>/month</span> </div>
+                                                <div class="tag-favs"><del>CHF 65'500</del></div>
                                                 <img class="d-block w-100" src="img/car/car-2.png" alt="car">
                                             </a>
                                             <div class="carbox-overlap-wrapper">
                                                 <div class="overlap-box">
                                                     <div class="overlap-btns-area">
-                                                        <a class="overlap-btn" data-bs-toggle="modal"
+                                                        <a class="overlap-btn active" data-bs-toggle="modal"
                                                             data-bs-target="#carOverviewModal">
                                                             <i class="fa fa-eye-slash"></i>
                                                         </a>
@@ -1118,23 +1047,16 @@
                                             </div>
                                             <ul class="facilities-list clearfix">
                                                 <li>
-                                                    <i class="flaticon-way"></i> 4,000 km
+                                                    <i class="flaticon-way"></i> 4,000 <sup>km</sup>
                                                 </li>
                                                 <li>
                                                     <i class="flaticon-manual-transmission"></i> Manual
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-calendar-1"></i> 2021
-                                                </li>
+
                                                 <li>
                                                     <i class="flaticon-fuel"></i> Petrol
                                                 </li>
-                                                <li>
-                                                    <i class="flaticon-car"></i> Sport
-                                                </li>
-                                                <li>
-                                                    <i class="flaticon-gear"></i> Blue
-                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -1178,16 +1100,6 @@
                                         </div>
                                         <fieldset class="wizard-fieldset show">
                                             <h5>Select Announcements Type</h5>
-                                            <!-- <div class="form-group">
-                                                <input type="text" class="form-control wizard-required" id="fname">
-                                                <label for="fname" class="wizard-form-text-label">First Name*</label>
-                                                <div class="wizard-form-error"></div>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control wizard-required" id="lname">
-                                                <label for="lname" class="wizard-form-text-label">Last Name*</label>
-                                                <div class="wizard-form-error"></div>
-                                            </div> -->
                                             <div class="form-group">
                                                 <div class="wizard-form-radio">
                                                     <input name="radio-name" id="radio1" type="radio">
@@ -1202,11 +1114,6 @@
                                                     <label for="radio2">Bikes</label>
                                                 </div>
                                             </div>
-                                            <!-- <div class="form-group">
-                                                <input type="text" class="form-control wizard-required" id="zcode">
-                                                <label for="zcode" class="wizard-form-text-label">Zip Code*</label>
-                                                <div class="wizard-form-error"></div>
-                                            </div> -->
                                             <div class="form-group clearfix">
                                                 <a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
                                             </div>
@@ -1218,7 +1125,7 @@
 
                                                 <form id="contact_form" action="index.html" method="GET"
                                                     enctype="multipart/form-data">
-                                                    <div class="row" style="--bs-gutter-x: 0.5 !important;">
+                                                    <div class="row" style="width:150%;">
                                                         <div class="col-md-12">
                                                             <div class="form-group name">
                                                                 <input type="text" name="fname" class="form-control"
@@ -1367,8 +1274,6 @@
                                                 </form>
                                             </div>
                                             <!-- Add item form end -->
-
-
                                             <div class="form-group clearfix">
                                                 <a href="javascript:;"
                                                     class="form-wizard-previous-btn float-left">Previous</a>
