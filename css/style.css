@@ -3912,7 +3912,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .team-2 .team-info {
-    padding: 15px 30px;
+    padding: 15px 15px;
 }
 
 .team-2 .contact p {
@@ -6114,7 +6114,7 @@ footer:before {
 }
 
 .contact-1 form textarea {
-    min-height: 155px!important;
+    min-height: 94px!important;
 }
 
 .contact-1 .contact-details .ci-box h4 {
