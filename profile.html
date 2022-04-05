@@ -996,7 +996,7 @@
 
                                                 <form id="contact_form" action="index.html" method="GET"
                                                     enctype="multipart/form-data">
-                                                    <div class="row" style="width:150%;">
+                                                    <div class="row mwm" style="width:150%;">
                                                         <div class="col-md-12">
                                                             <div class="form-group name">
                                                                 <input type="text" name="fname" class="form-control"
@@ -1630,7 +1630,23 @@
         }
         LoadMap();
     </script>
+    <style>
+        .nav-tabs {
+            display: flex;
+        }
 
+        .nav-tabs li {
+            display: flex;
+            flex: 1;
+            align-content: flex-start;
+            flex-direction: column;
+        }
+
+
+        .nav-tabs l a {
+            flex: 1;
+        }
+    </style>
 </body>
 
 </html>
