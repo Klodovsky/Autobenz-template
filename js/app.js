@@ -2,9 +2,9 @@ $(function () {
 
     'use strict';
 
-    // Showing page loader
+
   /*=============================================
-    =            Preloader                =
+    =            nextStepWizard                =
 =============================================*/
     $(document).ready(function () {
 
@@ -48,6 +48,12 @@ $(function () {
 
         $('div.setup-panel div a.btn-success').trigger('click');
     });
+    
+    // Showing page loader
+    /*=============================================
+  =            Preloader                =
+=============================================*/
+    
 function preloader() {
     $('.preloader').delay(0).fadeOut();
 };

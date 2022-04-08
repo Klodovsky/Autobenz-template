@@ -120,25 +120,45 @@
     <header class="main-header sticky-header header-with-top">
         <div class="container" style="margin-right: 145px;">
             <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="dropdown-toggle" type="button" data-toggle="dropdown"
+                    style="background: transparent;border: none;/* vertical-align: middle; */margin-left: -8px;">
+                    <img src="https://foxnfox.ch/includes/img/flags/chflag-400-200.png" class="img-responsive"
+                        alt="switzerland" data-country="ch" style="width: 35px;">
+                </button>
+                <select id="languages"
+                    style="color: #c1c5cc!important; font-size: 13px!important; background-color: #020d25;text-transform: uppercase; font-weight: 600;line-height: 50px;   padding: 0px -1px;   max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-top: 3px !important;/* margin-left: 8px; */">
+                    <option value="FR" selected="">FR</option>
+                    <option value="DE">DE</option>
+                    <option value="IT">IT</option>
+
+                </select>
                 <a class="navbar-brand company-logo" href="index.html">
                     <img src="img/logos/ab.png" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" id="drawer">
+                <button class="navbar-toggler" type="button" id="drawer" style="margin: -16px;margin-right: -8px;">
                     <span class="fa fa-bars"></span>
+                </button>
+                <button class="navbar-toggler" onclick="window.location.href='profile.html'" type="button" id="user"
+                    style="margin-left: 12px;">
+                    <span class="fa fa-user"></span>
                 </button>
                 <div class="navbar-collapse collapse w-100 justify-content-end" id="navbar">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item dropdown active">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Home
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="profile.html">Profile</a>
+                            <a class="nav-link dropdown-toggle" href="profile.html" id="navbarDropdownMenuLink3"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Profile
+                            </a>
+
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="pricing-tables.html" id="navbarDropdownMenuLink3"
+                            <a class="nav-link dropdown-toggle" href="pricing-tables.html" id="navbarDropdownMenuLink4"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Pricing
                             </a>
@@ -155,28 +175,33 @@
                     <ul class="navbar-nav ml-auto">
 
                         <!-- <li class="nav-item dropdown">
-                        <a href="login.html" class="nav-link h-icon">
-                            <i class="flaticon-logout"></i>
-                        </a>
-                    </li> -->
+                                    <a href="login.html" class="nav-link h-icon">
+                                        <i class="flaticon-logout"></i>
+                                    </a>
+                                </li> -->
 
                         <li class="nav-item dropdown">
                             <a href="#full-page-search" class="nav-link h-icon">
                                 <i class="fa fa-search"></i>
                             </a>
                         </li>
-                        <button class="dropdown-toggle" type="button" data-toggle="dropdown"
+                        <li class="nav-item dropdown">
+                            <a href="#full-page-search" class="nav-link h-icon">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                        <!-- <button class="dropdown-toggle" type="button" data-toggle="dropdown"
                             style="background: transparent;border: none;vertical-align: middle;padding-left: 6px;">
                             <img src="https://foxnfox.ch/includes/img/flags/chflag-400-200.png" class="img-responsive"
                                 alt="switzerland" data-country="ch" style="width: 35px;">
                         </button>
-                        <select id="languages"
-                            style="color: #c1c5cc!important; font-size: 13px!important; background-color: #020d25;text-transform: uppercase; font-weight: 600;line-height: 50px;   padding: 4px 7px;   max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-top: 39px !important;margin-left: 8px;">
-                            <option value="FR" selected="">FR</option>
+                        <select id="languages" class="margin-top-33"
+                            style="color: #c1c5cc!important; font-size: 13px!important; background-color: #020d26;text-transform: uppercase; font-weight: 600;line-height: 50px;   padding: 4px 7px;   max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-top: 39px;margin-left: 8px;">
+                            <option value="FR" selected>FR</option>
                             <option value="DE">DE</option>
                             <option value="IT">IT</option>
 
-                        </select>
+                        </select> -->
                     </ul>
                 </div>
             </nav>
@@ -188,7 +213,7 @@
     <nav id="sidebar" class="nav-sidebar">
         <!-- Close btn-->
         <div id="dismiss">
-            <i class="fa fa-close"></i>
+            <i class="fa fa-close closeicon"></i>
         </div>
         <div class="sidebar-inner">
             <div class="sidebar-logo">
@@ -245,21 +270,16 @@
                 <div class="col-lg-8 col-md-12">
                     <!-- Option bar start -->
                     <div class="option-bar clearfix">
-                        <div class="sorting-options-left">
-                            <ul class="nav nav-tabs" style="flex-direction: inherit;">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Cars</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Utility</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Bikes</a>
-                                </li>
-                            </ul>
+                        <div class="sorting-options-left" style="width: 30%;margin-top: -3px;">
+                            <!-- <span class="sort">Sort by:</span> -->
+                            <select class="selectpicker search-fields" name="default-order">
+                                <option>Cars</option>
+                                <option>Utility</option>
+                                <option>Bikes</option>
+                            </select>
                         </div>
                         <div class="sorting-options-right">
-                            <span class="sort">Sort by:</span>
+                            <!-- <span class="sort">Sort by:</span> -->
                             <select class="selectpicker sort-tag search-fields" name="default-order">
                                 <option>Newest First</option>
                                 <option>Oldest First</option>
