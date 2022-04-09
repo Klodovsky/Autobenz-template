@@ -6920,6 +6920,7 @@ fieldset:disabled .btn {
     top: 0;
     right: 0;
     width: 400px;
+    height: 475px;
     border-left: 1px solid rgba(0, 0, 0, .2);
     transform: translateX(100%)
 }

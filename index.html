@@ -193,9 +193,51 @@
                             </select>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#full-page-search" class="nav-link h-icon">
+                            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right
+                                offcanvas</button> -->
+                            <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight" class="nav-link h-icon">
                                 <i class="fa fa-bars fa-2x"></i>
                             </a>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="sidebar_top">
+                                        <div class="top_bar d-flex justify-content-between">
+                                            <h3>Terms of use</h3>
+                                            <div class="cart_close_btn">
+                                                <button type="button" class="btn-close text-reset"
+                                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                            </div>
+                                        </div>
+                                        <div class="cart_side_list">
+                                            <ul class="mini-dropdown-menu text-left">
+                                                <li class="li-items">1. After 365 days (1 year) of your registration.
+                                                </li>
+                                                <li class="li-items">2. We only process requests sent by e-mail from the
+                                                    site or at compta@foxnfox.ch the recommended letters are not
+                                                    mandatory.</li>
+                                                <li>3. After expiry of the contract (365 days) you have a period of 21
+                                                    days to claim your possible right to the refund, to pass this delay
+                                                    your request is not admissible.</li>
+                                                <li>4. In case of need fox n fox has the right to require a recent proof
+                                                    or proof of ownership (copy of the registration card or vehicle
+                                                    circulation permit).</li>
+                                                <li>5. The user or customer must change the price of his vehicle at
+                                                    least twice a year, or once every 6 months.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </li>
 
                     </ul>
