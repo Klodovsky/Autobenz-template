@@ -11187,3 +11187,9 @@ body {
     text-transform: uppercase;
     z-index: 999;
 }
+
+.mbr-section-btn {
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+    font-size: 0;
+}
