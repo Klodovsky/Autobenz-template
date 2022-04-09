@@ -312,7 +312,7 @@ button:focus {
 }
 
 .btn-sm {
-    padding: 7px 30px;
+    padding: 10px 30px;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
@@ -885,7 +885,7 @@ input[type=checkbox]:checked+label:before {
 }
 
 .main-header .company-logo img {
-    height: 50px;
+    /* height: 50px; */
 }
 
 .logo img {
@@ -11192,4 +11192,14 @@ body {
     margin-left: -0.25rem;
     margin-right: -0.25rem;
     font-size: 0;
+}
+
+.lan-icons {
+    width: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-direction: column;
 }

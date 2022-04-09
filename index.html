@@ -119,20 +119,9 @@
 
     <!-- Main header start -->
     <header class="main-header sticky-header header-with-top">
-        <div class="container" style="margin-right: 145px;">
+        <div class="container" style="margin-right: 125px;">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="dropdown-toggle" type="button" data-toggle="dropdown"
-                    style="background: transparent;border: none;/* vertical-align: middle; */margin-left: -8px;">
-                    <img src="https://foxnfox.ch/includes/img/flags/chflag-400-200.png" class="img-responsive"
-                        alt="switzerland" data-country="ch" style="width: 35px;">
-                </button>
-                <select id="languages"
-                    style="color: #c1c5cc!important; font-size: 13px!important; background-color: #020d25;text-transform: uppercase; font-weight: 600;line-height: 50px;   padding: 0px -1px;   max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-top: 3px !important;/* margin-left: 8px; */">
-                    <option value="FR" selected="">FR</option>
-                    <option value="DE">DE</option>
-                    <option value="IT">IT</option>
 
-                </select>
                 <a class="navbar-brand company-logo" href="index.html">
                     <img src="img/logos/ab.png" alt="logo">
                 </a>
@@ -182,27 +171,33 @@
                                 </li> -->
 
                         <li class="nav-item dropdown">
-                            <a href="#full-page-search" class="nav-link h-icon">
-                                <i class="fa fa-search"></i>
-                            </a>
+                            <form action="index.html#" class="search-boxs" style="margin-top: 25px;">
+                                <input class="search" type="search" value="" placeholder="Search .."
+                                    style="padding: 5px 0px 8px;width: 145px;">
+                                <button type="submit" class="btn btn-sm button-theme">Search</button>
+                            </form>
+                        </li>
+                        <li class="lan-icons">
+                            <button class="dropdown-toggle" type="button" data-toggle="dropdown"
+                                style="background: transparent;border: none;width: 50px;">
+                                <img src="https://foxnfox.ch/includes/img/flags/chflag-400-200.png"
+                                    class="img-responsive" alt="switzerland" data-country="ch"
+                                    style="width: 40px;/* margin-bottom: 4px; */">
+                            </button>
+                            <select id="languages"
+                                style="color: #c1c5cc!important; font-size: 13px!important; background-color: #020d25;text-transform: uppercase; font-weight: 600;line-height: 50px;      max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-left: 2px;margin-bottom: 2px;width: 40px;">
+                                <option value="FR" selected="">FR</option>
+                                <option value="DE">DE</option>
+                                <option value="IT">IT</option>
+
+                            </select>
                         </li>
                         <li class="nav-item dropdown">
                             <a href="#full-page-search" class="nav-link h-icon">
-                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-bars fa-2x"></i>
                             </a>
                         </li>
-                        <!-- <button class="dropdown-toggle" type="button" data-toggle="dropdown"
-                            style="background: transparent;border: none;vertical-align: middle;padding-left: 6px;">
-                            <img src="https://foxnfox.ch/includes/img/flags/chflag-400-200.png" class="img-responsive"
-                                alt="switzerland" data-country="ch" style="width: 35px;">
-                        </button>
-                        <select id="languages" class="margin-top-33"
-                            style="color: #c1c5cc!important; font-size: 13px!important; background-color: #020d26;text-transform: uppercase; font-weight: 600;line-height: 50px;   padding: 4px 7px;   max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-top: 39px;margin-left: 8px;">
-                            <option value="FR" selected>FR</option>
-                            <option value="DE">DE</option>
-                            <option value="IT">IT</option>
 
-                        </select> -->
                     </ul>
                 </div>
             </nav>
