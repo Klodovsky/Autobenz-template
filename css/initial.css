@@ -770,6 +770,14 @@
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
+    .sticky-header-rest {
+        position: fixed;
+        background: #020d26;
+        z-index: 1000;
+        width: 100%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
     #main-header-2.sticky-header {
         top: 0px;
         border-bottom: none;
