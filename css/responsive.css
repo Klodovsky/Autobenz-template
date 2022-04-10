@@ -204,3 +204,9 @@
 
     }
 }
+
+@media (min-width: 1000px) {
+    .pagination-lar {
+        margin-top: 56px;
+    }
+}

@@ -624,6 +624,10 @@ button:focus {
     }
 }
 
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
 #page_scroller {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -6553,7 +6557,7 @@ footer:before {
 }
 
 .widget {
-    padding: 30px 25px;
+    padding: 26px 25px;
     border-bottom: solid 1px #e2e2e2;
 }
 

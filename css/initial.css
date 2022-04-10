@@ -67,7 +67,7 @@
 }
 
 .sidebar-logo img {
-    width: 80px;
+    width: 150px;
 }
 
 .sidebar-navigation ul {
@@ -174,7 +174,7 @@
 }
 
 .sidebar-logo {
-    padding: 20px 30px;
+    padding: 20px 0px;
     border-bottom: solid 1px #00000024;
 }
 
