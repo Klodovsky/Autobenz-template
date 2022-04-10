@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Autobenz - Car Dealer HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+    <link rel="stylesheet" href="css/map.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jnoty.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/preloader.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/initial.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/midnight-blue.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700%7CUbuntu:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,300,700">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script  src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script  src="js/html5shiv.min.js"></script>
+    <script  src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- preloader-start -->
+    <div class="preloader">
+        <div class="meter">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="loader-circle-1">
+                <div class="loader-circle-2"></div>
+            </div>
+            <span class="loadtext">Loading</span>
+        </div>
+    </div>
+    <!-- preloader-end -->
+
+    <!-- Main header start -->
+    <header class="main-header sticky-header header-with-top" style="top: 0px !important;">
+        <div class="container" style="margin-right: 145px;">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand company-logo" href="index.html">
+                    <img src="img/logos/ab.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" id="drawer">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="navbar-collapse collapse w-100 justify-content-end" id="navbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="pricing-tables.html" id="navbarDropdownMenuLink3"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pricing
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="login.html" id="dropdown01" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Add vehicle</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- <li class="nav-item dropdown">
+                        <a href="login.html" class="nav-link h-icon">
+                            <i class="flaticon-logout"></i>
+                        </a>
+                    </li> -->
+
+                        <li class="nav-item dropdown">
+                            <a href="#full-page-search" class="nav-link h-icon">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown"
+                            style="background: transparent;border: none;vertical-align: middle;padding-left: 6px;">
+                            <img src="https://foxnfox.ch/includes/img/flags/chflag-400-200.png" class="img-responsive"
+                                alt="switzerland" data-country="ch" style="width: 35px;">
+                        </button>
+                        <select id="languages"
+                            style="color: #c1c5cc!important; font-size: 13px!important; background-color: #020d26;text-transform: uppercase; font-weight: 600;line-height: 50px;   padding: 4px 7px;   max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-top: 39px !important;margin-left: 8px;">
+                            <option value="FR" selected>FR</option>
+                            <option value="DE">DE</option>
+                            <option value="IT">IT</option>
+
+                        </select>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Main header end -->
+
+    <!-- Sidenav start -->
+    <nav id="sidebar" class="nav-sidebar">
+        <!-- Close btn-->
+        <div id="dismiss">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="sidebar-inner">
+            <div class="sidebar-logo">
+                <img src="img/logos/black-logo.png" alt="sidebarlogo">
+            </div>
+            <div class="sidebar-navigation">
+                <h3 class="heading">AUTO<span>BENZ</span></h3>
+                <ul class="menu-list">
+                    <li><a href="index.html" class="pt0 active">Home</a>
+                    </li>
+                    <li><a href="profile.html">Profile</a>
+                    </li>
+                    <li><a href="pricing-tables.html">Pricing</a>
+                    </li>
+                    <li><a href="login.html">Add vehicle</a>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="nav-link h-icon">
+                            <i class="flaticon-logout"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#full-page-search" class="nav-link h-icon">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Sidenav end -->
+
+    <!-- Sub banner start -->
+    <div class="sub-banner sub-banner-h">
+        <div class="container breadcrumb-area">
+            <!-- <div class="breadcrumb-areas">
+                <h1>Car Grid</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Car Grid</li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <!-- Sub Banner end -->
+
+    <!-- Pricing tables start -->
+    <div class="faq content-area-9">
+        <div class="container">
+            <!-- Main title -->
+            <div class="main-title text-center">
+                <h1 class="mb-10">TERMS OF USE</h1>
+                <div class="title-border mb-30">
+                    <div class="title-border-inner"></div>
+                    <div class="title-border-inner"></div>
+                    <div class="title-border-inner"></div>
+                    <div class="title-border-inner"></div>
+                    <div class="title-border-inner"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="detail">
+                        <h3>
+                            <a href="blog-details.html">TERMS OF USE
+                            </a>
+                        </h3>
+                        <ol class="list-style-1 list-style-cgu tosul" style="font-size: 15px;text-align: justify;">
+                            <li>foxnfox.ch is a dynamic website whose objective is the enhancement and mass distribution
+                                via the Internet of any
+                                motor vehicle intended for sale between individuals.</li>
+
+                            <li> SWISS BOOST NETWORK does not charge any commission, the transaction is made directly
+                                between the seller or
+                                advertiser and the potential buyer or user.</li>
+
+                            <li> SWISS BOOST NETWORK does not represent any party and disclaims any involvement in the
+                                transaction between
+                                seller and buyer. The advertiser is solely responsible for the content (texts, prices,
+                                images ...) of his ads or
+                                comments, he manages his account independently.</li>
+
+                            <li>With the login and password the advertiser completely controls his ads (delete or add
+                                modification), he
+                                personally optimizes his data and if necessary it is possible to contact our technical
+                                support.</li>
+
+                            <li>Upon receipt of his e-mail (confirmation of his account), the advertiser must
+                                imperatively change his password
+                                in his profile.</li>
+
+                            <li>The advertiser can pay his registration either by E-Banking or bank transfer / Credit
+                                Cards (using our online
+                                payment module) / or by Paypal.</li>
+
+                            <li>1 Test Account, CHF 00.-, 1 announcement during 10 days</li>
+                            <li>1 Dynamic Account: CHF 129.- (1 ads / 1 year)</li>
+
+                            <li>The advertiser bears all risks that may arise from manipulation or malfunction of his
+                                computer system or misuse
+                                of access rights.</li>
+
+                            <li> SWISS BOOST NETWORK may modify, suspend or discontinue any aspect of the service at any
+                                time without notice or
+                                liability or obligation of refund.</li>
+
+                            <li>The liability of SWISS BOOST NETWORK vis-à-vis the advertiser is in any case expressly
+                                limited to the price paid
+                                for the broadcast of the advertisement on our web interface.</li>
+
+                            <li>The advertiser can at any time delete the announcement of the vehicle sold, modify these
+                                personal data or
+                                account.</li>
+
+                            <li>For its promotion SWISS BOOST NETWORK uses external telemarketers, we make you aware
+                                that our responsibility is
+                                limited to the content of our general conditions of use.</li>
+
+                            <li>Only complaints by e-mail will be studied: contact@autobenz.ch</li>
+
+                            <li>In case of a magore force, the company can not be held responsible for interruptions and
+                                modifications of the
+                                Site and the Online Services, no refund will be considered.</li>
+
+                            <li>This contract is exclusively governed by Swiss law excluding private international law.
+                            </li>
+
+                            <li>To terminate his account or contract, the customer must inform only by e-mail to:
+                                contact@autobenz.ch</li>
+                            <li>The retraction period is 14 days maximum</li>
+
+                            <li>For any contact, we are at your disposal from Monday to Friday from 9:00 to 17:00 at Tel
+                                +41 58 255 11 77</li>
+
+                            <li>SATISFIED OR REFUNDED</li>
+                            <ol>
+                                <li style="">1. After 365 days (1 year) of your registration.</li>
+                                <li style="">2. We only handle requests sent by email from the site or at
+                                    compta@autobenz.ch the recommended
+                                    letters are not mandatory.</li>
+                                <li style="">3. After expiry of the contract (365 days) you have a period of 21 days to
+                                    claim your possible
+                                    right to the refund, to pass this delay your request is not admissible.</li>
+                                <li style="">4. In case of need SWISS BOOST NETWORK has the right to require a recent
+                                    proof or proof of
+                                    ownership (copy of the registration certificate or vehicle circulation permit).</li>
+                                <li style="">5. The user or customer must change the price of his vehicle at least twice
+                                    a year, ie once every 6
+                                    months.</li>
+                            </ol>
+                            <li>Upon receipt of your payment your phone number will be visible on our website (your ad).
+                            </li>
+                            <li>For any dispute related to this activity, the place of jurisdiction is at the head
+                                office of: <br>
+                                SWISS BOOST NETWORK
+                                <!-- <br> 16 Avenue de Frontenex <br> 1207 GENEVA -->
+                                <br> 20 Rue Charles-Strum &nbsp;
+                                <br> 1206 GENÈVE
+                            </li>
+
+
+
+
+                            <!-- <li>
+                                                                            Le site web et les services présents sur ces pages vous sont proposés par :<br>
+                                                                             SWISS BOOST NETWORK<br>
+                                                                            16 Avenue de Frontenex<br>
+                                                                            1207 GENÈVE
+                                                                        </li> -->
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing tables end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-2 col-md-3 col-sm-2">
+                    <div class="footer-item clearfix">
+                        <h4>
+                            Contact Info
+                        </h4>
+                        <ul class="contact-info">
+                            <li>
+                                <i class="flaticon-pin"></i>20 Rue Charles-Strum<br>
+                                1206 GENÈVE.
+                            </li>
+                            <li>
+                                <i class="flaticon-mail"></i><a href="mailto:info@autobenz.ch">info@autobenz.com</a>
+                            </li>
+                            <!-- <li>
+                                <i class="flaticon-phone"></i><a href="tel:+41 58 2551 177">+41 58 2551 177</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3">
+                    <div class="recent-posts footer-item">
+                        <h4>PAGES</h4>
+                        <ul class="links">
+                            <li>
+                                <a href="legal-notice.html">Legal Notice</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of use</a>
+                            </li>
+                            <li>
+                                <a href="pricing-tables.html">Pricing</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-item">
+                        <h4>
+                            Categories
+                        </h4>
+                        <ul class="links">
+                            <li>
+                                <a href="#">Cars</a>
+                            </li>
+                            <li>
+                                <a href="#">Utility</a>
+                            </li>
+                            <li>
+                                <a href="#">Moto</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                    <div class="recent-posts footer-item">
+                        <h4>MY ACCOUNT</h4>
+                        <ul class="links">
+                            <li>
+                                <a href="profile.html">My Account</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">Order History</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">Wish List</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-item clearfix">
+                        <h4>Subscribe</h4>
+                        <div class="Subscribe-box">
+                            <p>Subscribe now and get the latest on sales, new releases and more…</p>
+                            <form class="form-inline d-flex" action="#">
+                                <input class="form-control" type="email" id="email" placeholder="Email Address ...">
+                                <button class="btn button-theme" type="submit"><i
+                                        class="fa fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p>© 2020 <a href="#">AUTOBENZ.</a> Trademarks and brands are the property of their respective
+                            owners.</p>
+                    </div>
+                    <div class="col-lg-4 sub-footer-cards">
+                        <a href="pricing-tables.html"><img src="https://foxnfox.ch/includes/img/payment.png"
+                                alt="pricing"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Full Page Search -->
+    <div id="full-page-search">
+        <button type="button" class="close">×</button>
+        <div class="full-page-search-box">
+            <form action="index.html#" class="search-boxs">
+                <input class="search" type="search" value="" placeholder="type keyword(s) here" />
+                <button type="submit" class="btn btn-sm button-theme">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-submenu.js"></script>
+    <script src="js/rangeslider.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/leaflet-providers.js"></script>
+    <script src="js/leaflet.markercluster.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.filterizr.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/lightgallery-all.js"></script>
+    <script src="js/jnoty.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Custom javascript -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+
+</html>
