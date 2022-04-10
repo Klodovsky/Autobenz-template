@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Autobenz - Car Dealer HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+    <link rel="stylesheet" href="css/map.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jnoty.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/preloader.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/initial.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/midnight-blue.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700%7CUbuntu:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,300,700">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script  src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script  src="js/html5shiv.min.js"></script>
+    <script  src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- preloader-start -->
+    <div class="preloader">
+        <div class="meter">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="subline"></div>
+            <div class="loader-circle-1">
+                <div class="loader-circle-2"></div>
+            </div>
+            <span class="loadtext">Loading</span>
+        </div>
+    </div>
+    <!-- preloader-end -->
+
+    <!-- Main header start -->
+    <header class="main-header sticky-header header-with-top" style="top: 0px !important;">
+        <div class="container" style="margin-right: 145px;">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand company-logo" href="index.html">
+                    <img src="img/logos/ab.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" id="drawer">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="navbar-collapse collapse w-100 justify-content-end" id="navbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="pricing-tables.html" id="navbarDropdownMenuLink3"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pricing
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="login.html" id="dropdown01" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Add vehicle</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- <li class="nav-item dropdown">
+                        <a href="login.html" class="nav-link h-icon">
+                            <i class="flaticon-logout"></i>
+                        </a>
+                    </li> -->
+
+                        <li class="nav-item dropdown">
+                            <a href="#full-page-search" class="nav-link h-icon">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown"
+                            style="background: transparent;border: none;vertical-align: middle;padding-left: 6px;">
+                            <img src="https://foxnfox.ch/includes/img/flags/chflag-400-200.png" class="img-responsive"
+                                alt="switzerland" data-country="ch" style="width: 35px;">
+                        </button>
+                        <select id="languages"
+                            style="color: #c1c5cc!important; font-size: 13px!important; background-color: #020d26;text-transform: uppercase; font-weight: 600;line-height: 50px;   padding: 4px 7px;   max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-top: 39px !important;margin-left: 8px;">
+                            <option value="FR" selected>FR</option>
+                            <option value="DE">DE</option>
+                            <option value="IT">IT</option>
+
+                        </select>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Main header end -->
+
+    <!-- Sidenav start -->
+    <nav id="sidebar" class="nav-sidebar">
+        <!-- Close btn-->
+        <div id="dismiss">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="sidebar-inner">
+            <div class="sidebar-logo">
+                <img src="img/logos/black-logo.png" alt="sidebarlogo">
+            </div>
+            <div class="sidebar-navigation">
+                <h3 class="heading">AUTO<span>BENZ</span></h3>
+                <ul class="menu-list">
+                    <li><a href="index.html" class="pt0 active">Home</a>
+                    </li>
+                    <li><a href="profile.html">Profile</a>
+                    </li>
+                    <li><a href="pricing-tables.html">Pricing</a>
+                    </li>
+                    <li><a href="login.html">Add vehicle</a>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="nav-link h-icon">
+                            <i class="flaticon-logout"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#full-page-search" class="nav-link h-icon">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Sidenav end -->
+
+    <!-- Sub banner start -->
+    <div class="sub-banner sub-banner-h">
+        <div class="container breadcrumb-area">
+            <!-- <div class="breadcrumb-areas">
+                <h1>Car Grid</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Car Grid</li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <!-- Sub Banner end -->
+
+    <!-- Pricing tables start -->
+    <div class="faq content-area-9">
+        <div class="container">
+            <!-- Main title -->
+            <div class="main-title text-center">
+                <h1 class="mb-10">Frequently Asked Questions</h1>
+                <div class="title-border mb-30">
+                    <div class="title-border-inner"></div>
+                    <div class="title-border-inner"></div>
+                    <div class="title-border-inner"></div>
+                    <div class="title-border-inner"></div>
+                    <div class="title-border-inner"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="faq-info">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        How can i choose multiple Car ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
+                                            tincidunt
+                                            aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros.
+                                            Maecenas
+                                            eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla
+                                            dui.
+                                            Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus
+                                            fringilla ipsum quis porta. Morbi tincidunt viverra pharetra. Vestibulum vel
+                                            mauris et odio lobortis laoreet eget eu magna. Proin mauris erat, luctus at
+                                            nulla ut, lobortis mattis magna. Morbi a arcu lacus. Maecenas tristique
+                                            velit
+                                            vitae nisi consectetur, in mattis diam sodales. Mauris sagittis sem mattis
+                                            justo
+                                            bibendum, a eleifend dolor facilisis. Mauris nec pharetra tortor, ac aliquam
+                                            felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        What are the safties related to Car ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
+                                            tincidunt
+                                            aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros.
+                                            Maecenas
+                                            eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla
+                                            dui.
+                                            Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus
+                                            fringilla ipsum quis porta. Morbi tincidunt viverra pharetra. Vestibulum vel
+                                            mauris et odio lobortis laoreet eget eu magna. Proin mauris erat, luctus at
+                                            nulla ut, lobortis mattis magna. Morbi a arcu lacus. Maecenas tristique
+                                            velit
+                                            vitae nisi consectetur, in mattis diam sodales. Mauris sagittis sem mattis
+                                            justo
+                                            bibendum, a eleifend dolor facilisis. Mauris nec pharetra tortor, ac aliquam
+                                            felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        What are the safties related to Car ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
+                                            tincidunt
+                                            aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros.
+                                            Maecenas
+                                            eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla
+                                            dui.
+                                            Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus
+                                            fringilla ipsum quis porta. Morbi tincidunt viverra pharetra. Vestibulum vel
+                                            mauris et odio lobortis laoreet eget eu magna. Proin mauris erat, luctus at
+                                            nulla ut, lobortis mattis magna. Morbi a arcu lacus. Maecenas tristique
+                                            velit
+                                            vitae nisi consectetur, in mattis diam sodales. Mauris sagittis sem mattis
+                                            justo
+                                            bibendum, a eleifend dolor facilisis. Mauris nec pharetra tortor, ac aliquam
+                                            felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse4" aria-expanded="false"
+                                        aria-controls="flush-collapse4">
+                                        What is your refund policy ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse4" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
+                                            tincidunt
+                                            aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros.
+                                            Maecenas
+                                            eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla
+                                            dui.
+                                            Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus
+                                            fringilla ipsum quis porta. Morbi tincidunt viverra pharetra. Vestibulum vel
+                                            mauris et odio lobortis laoreet eget eu magna. Proin mauris erat, luctus at
+                                            nulla ut, lobortis mattis magna. Morbi a arcu lacus. Maecenas tristique
+                                            velit
+                                            vitae nisi consectetur, in mattis diam sodales. Mauris sagittis sem mattis
+                                            justo
+                                            bibendum, a eleifend dolor facilisis. Mauris nec pharetra tortor, ac aliquam
+                                            felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse5" aria-expanded="false"
+                                        aria-controls="flush-collapse5">
+                                        Do you offer money back guarantee ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse5" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
+                                            tincidunt
+                                            aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros.
+                                            Maecenas
+                                            eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla
+                                            dui.
+                                            Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus
+                                            fringilla ipsum quis porta. Morbi tincidunt viverra pharetra. Vestibulum vel
+                                            mauris et odio lobortis laoreet eget eu magna. Proin mauris erat, luctus at
+                                            nulla ut, lobortis mattis magna. Morbi a arcu lacus. Maecenas tristique
+                                            velit
+                                            vitae nisi consectetur, in mattis diam sodales. Mauris sagittis sem mattis
+                                            justo
+                                            bibendum, a eleifend dolor facilisis. Mauris nec pharetra tortor, ac aliquam
+                                            felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse6" aria-expanded="false"
+                                        aria-controls="flush-collapse6">
+                                        What are the restrictions related to payment ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse6" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
+                                            tincidunt
+                                            aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros.
+                                            Maecenas
+                                            eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla
+                                            dui.
+                                            Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus
+                                            fringilla ipsum quis porta. Morbi tincidunt viverra pharetra. Vestibulum vel
+                                            mauris et odio lobortis laoreet eget eu magna. Proin mauris erat, luctus at
+                                            nulla ut, lobortis mattis magna. Morbi a arcu lacus. Maecenas tristique
+                                            velit
+                                            vitae nisi consectetur, in mattis diam sodales. Mauris sagittis sem mattis
+                                            justo
+                                            bibendum, a eleifend dolor facilisis. Mauris nec pharetra tortor, ac aliquam
+                                            felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse7" aria-expanded="false"
+                                        aria-controls="flush-collapse7">
+                                        How I can contact with good mechanic
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse7" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus
+                                            tincidunt
+                                            aliquam. Aliquam gravida massa at sem vulputate interdum et vel eros.
+                                            Maecenas
+                                            eros enim, tincidunt vel turpis vel, dapibus tempus nulla. Donec vel nulla
+                                            dui.
+                                            Pellentesque sed ante sed ligula hendrerit condimentum. Suspendisse rhoncus
+                                            fringilla ipsum quis porta. Morbi tincidunt viverra pharetra. Vestibulum vel
+                                            mauris et odio lobortis laoreet eget eu magna. Proin mauris erat, luctus at
+                                            nulla ut, lobortis mattis magna. Morbi a arcu lacus. Maecenas tristique
+                                            velit
+                                            vitae nisi consectetur, in mattis diam sodales. Mauris sagittis sem mattis
+                                            justo
+                                            bibendum, a eleifend dolor facilisis. Mauris nec pharetra tortor, ac aliquam
+                                            felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing tables end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-2 col-md-3 col-sm-2">
+                    <div class="footer-item clearfix">
+                        <h4>
+                            Contact Info
+                        </h4>
+                        <ul class="contact-info">
+                            <li>
+                                <i class="flaticon-pin"></i>20 Rue Charles-Strum<br>
+                                1206 GENÈVE.
+                            </li>
+                            <li>
+                                <i class="flaticon-mail"></i><a href="mailto:info@autobenz.ch">info@autobenz.com</a>
+                            </li>
+                            <!-- <li>
+                                <i class="flaticon-phone"></i><a href="tel:+41 58 2551 177">+41 58 2551 177</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3">
+                    <div class="recent-posts footer-item">
+                        <h4>PAGES</h4>
+                        <ul class="links">
+                            <li>
+                                <a href="legal-notice.html">Legal Notice</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of use</a>
+                            </li>
+                            <li>
+                                <a href="pricing-tables.html">Pricing</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-item">
+                        <h4>
+                            Categories
+                        </h4>
+                        <ul class="links">
+                            <li>
+                                <a href="#">Cars</a>
+                            </li>
+                            <li>
+                                <a href="#">Utility</a>
+                            </li>
+                            <li>
+                                <a href="#">Moto</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                    <div class="recent-posts footer-item">
+                        <h4>MY ACCOUNT</h4>
+                        <ul class="links">
+                            <li>
+                                <a href="profile.html">My Account</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">Order History</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">Wish List</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-item clearfix">
+                        <h4>Subscribe</h4>
+                        <div class="Subscribe-box">
+                            <p>Subscribe now and get the latest on sales, new releases and more…</p>
+                            <form class="form-inline d-flex" action="#">
+                                <input class="form-control" type="email" id="email" placeholder="Email Address ...">
+                                <button class="btn button-theme" type="submit"><i
+                                        class="fa fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p>© 2020 <a href="#">AUTOBENZ.</a> Trademarks and brands are the property of their respective
+                            owners.</p>
+                    </div>
+                    <div class="col-lg-4 sub-footer-cards">
+                        <a href="pricing-tables.html"><img src="https://foxnfox.ch/includes/img/payment.png"
+                                alt="pricing"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Full Page Search -->
+    <div id="full-page-search">
+        <button type="button" class="close">×</button>
+        <div class="full-page-search-box">
+            <form action="index.html#" class="search-boxs">
+                <input class="search" type="search" value="" placeholder="type keyword(s) here" />
+                <button type="submit" class="btn btn-sm button-theme">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-submenu.js"></script>
+    <script src="js/rangeslider.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/leaflet-providers.js"></script>
+    <script src="js/leaflet.markercluster.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.filterizr.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/lightgallery-all.js"></script>
+    <script src="js/jnoty.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Custom javascript -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+
+</html>

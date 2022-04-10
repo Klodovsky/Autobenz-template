@@ -85,6 +85,10 @@
     .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
         width: 220px;
     }
+
+    .sub-banner-h {
+        height: 50px !important;
+    }
 }
 
 .sort-tag {
@@ -98,6 +102,10 @@
         width: 165px !important;
         margin-bottom: 0px;
         margin-top: -4px;
+    }
+
+    .sub-banner-h {
+        height: 330px !important;
     }
 }
 
