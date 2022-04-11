@@ -56,11 +56,11 @@ p {
 }
 
 strong {
-    color: #f75d34;
+    color: #ff5400;
 }
 
 span {
-    color: #f75d34;
+    color: #ff5400;
 }
 
 h1,
@@ -94,7 +94,7 @@ h4 {
     font-size: 18px;
     font-weight: 800;
     margin-right: 6px;
-    color: #f75d34;
+    color: #ff5400;
 }
 
 ul {
@@ -749,12 +749,12 @@ input[type=checkbox]:checked+label:before {
 }
 
 .button-theme {
-    color: #FFF !important;
+    color: #abb2c0 !important;
     outline: none;
 }
 
 .button-theme:hover {
-    color: #fff;
+    color: #fff !important;
 }
 
 .read-more {
@@ -11251,4 +11251,49 @@ body {
     transform: translate(0px, -100%) scale(0, 0);
     opacity: 0;
     z-index: 99999;
+}
+
+.car_found {
+    border-bottom: 1px px solid #ececec;
+    padding-bottom: 16px;
+    padding-left: 290px;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+.drive_item {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 0px !important;
+}
+
+@media (min-width: 460px) {
+    .car_found .right {
+        /* margin-top: 20px; */
+        margin-bottom: -43px;
+        padding-left: 400px;
+        width: 102%;
+    }
+}
+
+.drive_item .left .nav {
+    border: none;
+}
+
+.drive_item .left .nav li {
+    margin: 0px;
+    margin-right: 77px;
+}
+
+
+.car_found .right .price_filter {
+    display: inline-block;
+    position: relative;
+}
+
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
 }

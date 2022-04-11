@@ -1,9 +1,9 @@
 .button-theme {
-    background: #f75d34;
+    background: #020d26;
 }
 
 .button-theme:hover {
-    background: #e73b0d;
+    background: #ff5400;
 }
 
 .intro-section .intro-section-inner:before {
@@ -352,7 +352,7 @@
 }
 
 #page_scroller {
-    background: #f75d34;
+    background: #ff5400;
 }
 
 .dashboard-nav {
@@ -472,7 +472,7 @@ input[type=checkbox]:checked+label:before {
 
 .search-button:hover {
     color: #fff;
-    background: #f75d34;
+    background: #ff5400;
 }
 
 .popular .price-for-user {
@@ -588,7 +588,7 @@ footer .footer-item .contact-info li label a:hover {
 }
 
 .footer .form-inline .btn {
-    background: #f75d34;
+    background: #ff5400;
     color: #fff;
 }
 
@@ -948,8 +948,8 @@ li.active.filtr-button.filtr a {
 
 
 .navbar-expand-lg .navbar-nav .nav-link:active {
-    color: #f75d34 !important;
-    border-bottom: solid 2px #f75d34;
+    color: #ff5400 !important;
+    border-bottom: solid 2px #ff5400;
 }
 
 .navbar-nav>.active>a {

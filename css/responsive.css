@@ -223,4 +223,58 @@
     #top-header-2 .container-fluid {
         padding: 0 170px !important;
     }
+
+    .cnav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.full-page-search-box {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    background: transparent;
+    font-weight: 400;
+    text-align: center;
+    border: 0;
+    margin: 0 auto;
+    margin-top: -51px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+}
+
+.hsearch {
+    background: #fff;
+    border: none;
+    padding: 12.2px 30px;
+    font-size: 17px;
+    width: 70%;
+    float: left;
+    border-radius: 2px;
+    margin-right: -1px;
+}
+
+.search-btn {
+    width: 30%;
+    float: left;
+    padding: 15px 20px 13.5px;
+    font-weight: 600;
+    border: 1px solid #ffffff57;
+    transition: all 300ms ease;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: "Barlow",
+        sans-serif;
 }

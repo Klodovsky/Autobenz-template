@@ -140,13 +140,13 @@
                                 Home
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="profile.html" id="navbarDropdownMenuLink3"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Profile
                             </a>
 
-                        </li>
+                        </li> -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="pricing-tables.html" id="navbarDropdownMenuLink4"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -170,72 +170,31 @@
                                     </a>
                                 </li> -->
 
-                        <li class="nav-item dropdown">
-                            <form action="index.html#" class="search-boxs" style="margin-top: 25px;">
-                                <input class="search" type="search" value="" placeholder="Search .."
-                                    style="padding: 5px 0px 8px;width: 145px;">
-                                <button type="submit" class="btn btn-sm button-theme">Search</button>
-                            </form>
-                        </li>
+                        <!-- <li class="nav-item dropdown"> -->
+                        <!-- <div class="full-page-search-box"> -->
+                        <form action="index.html#" class="search-boxs">
+                            <input class="hsearch" type="search" value="" placeholder="type keyword(s) here">
+                            <button type="submit" class="search-btn btn-sm button-theme">Search</button>
+                        </form>
+                        <!-- </div> -->
+                        <!-- </li> -->
                         <li class="lan-icons">
                             <button class="dropdown-toggle" type="button" data-toggle="dropdown"
-                                style="background: transparent;border: none;width: 50px;">
+                                style="background: transparent;border: none;width: 44px;">
                                 <img src="https://foxnfox.ch/includes/img/flags/chflag-400-200.png"
                                     class="img-responsive" alt="switzerland" data-country="ch"
-                                    style="width: 40px;/* margin-bottom: 4px; */">
+                                    style="width: 44px;margin-bottom: 4px;">
                             </button>
                             <select id="languages"
-                                style="color: #c1c5cc!important; font-size: 13px!important; background-color: #020d25;text-transform: uppercase; font-weight: 600;line-height: 50px;     
-                                 max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-left: 2px;margin-bottom: 2px;width: 42px;">
+                                style="color: #c1c5cc!important; font-size: 16px!important; background-color: #020d25;text-transform: uppercase; font-weight: 400;line-height: 50px;     
+                                                     max-height: 25px;box-shadow: 0px 0px 0px 1px rgb(2 13 38);margin-left: 12px;margin-bottom: 2px;width: 44px;">
                                 <option value="FR" selected="">FR</option>
                                 <option value="DE">DE</option>
                                 <option value="IT">IT</option>
 
                             </select>
                         </li>
-                        <li class="nav-item dropdown">
-                            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right
-                                offcanvas</button> -->
-                            <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                aria-controls="offcanvasRight" class="nav-link h-icon">
-                                <i class="fa fa-bars fa-2x"></i>
-                            </a>
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                aria-labelledby="offcanvasRightLabel">
 
-                                <div class="offcanvas-body">
-                                    <div class="sidebar_top">
-                                        <div class="top_bar d-flex justify-content-between">
-                                            <h3>Terms of use</h3>
-                                            <div class="cart_close_btn">
-                                                <button type="button" class="btn-close text-reset"
-                                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
-                                            </div>
-                                        </div>
-                                        <div class="cart_side_list">
-                                            <ul class="mini-dropdown-menu text-left">
-                                                <li class="li-items">1. After 365 days (1 year) of your registration.
-                                                </li>
-                                                <li class="li-items">2. We only process requests sent by e-mail from the
-                                                    site or at compta@foxnfox.ch the recommended letters are not
-                                                    mandatory.</li>
-                                                <li>3. After expiry of the contract (365 days) you have a period of 21
-                                                    days to claim your possible right to the refund, to pass this delay
-                                                    your request is not admissible.</li>
-                                                <li>4. In case of need fox n fox has the right to require a recent proof
-                                                    or proof of ownership (copy of the registration card or vehicle
-                                                    circulation permit).</li>
-                                                <li>5. The user or customer must change the price of his vehicle at
-                                                    least twice a year, or once every 6 months.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </li>
 
                     </ul>
                 </div>
@@ -304,23 +263,38 @@
             <div class="row">
                 <div class="col-lg-8 col-md-12">
                     <!-- Option bar start -->
-                    <div class="option-bar clearfix">
-                        <div class="sorting-options-left" style="width: 30%;margin-top: -3px;">
-                            <!-- <span class="sort">Sort by:</span> -->
-                            <select class="selectpicker search-fields" name="default-order">
-                                <option>Cars</option>
-                                <option>Utility</option>
-                                <option>Bikes</option>
-                            </select>
-                        </div>
-                        <div class="sorting-options-right">
-                            <!-- <span class="sort">Sort by:</span> -->
-                            <select class="selectpicker sort-tag search-fields" name="default-order">
-                                <option>Newest First</option>
-                                <option>Oldest First</option>
-                                <option>Price High to Low</option>
-                                <option>Price: Low to High</option>
-                            </select>
+                    <div class="car_found d-flex justify-content-between">
+                        <div class="left">
+                            <div class="drive_item">
+                                <div class="right">
+
+                                    <select class="selectpicker search-fields" name="select-make">
+                                        <option>Newest First</option>
+                                        <option>Oldest First</option>
+                                        <option>Price High to Low</option>
+                                        <option>Price: Low to High</option>
+                                    </select>
+
+                                </div>
+                                <div class="left">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                                role="tab" aria-controls="home" aria-selected="true">Cars</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                                role="tab" aria-controls="profile" aria-selected="false">Utility</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " id="contact-tab" data-toggle="tab" href="#contact"
+                                                role="tab" aria-controls="contact" aria-selected="false">Bikes</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
